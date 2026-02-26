@@ -40,12 +40,12 @@ categoricalGrade calificacion =
     List.map
         (\cal ->
             if cal < 0 then
-                Failed
+                Pending
 
             else if cal >= 7 then
                 Approved
 
             else
-                Pending
+                Failed
         )
         calificacion
